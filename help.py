@@ -65,6 +65,15 @@ def setPageing(obj):
     return page.results()
 
 
+# 判断值是否存在
+def in_array(key=None, array=[]):
+    count = array.count(key)
+    if count >= 1:
+        return True
+    else:
+        return False
+
+
 def dictToListJoinDict(items):
     listTmp = []
     if len(items) != 0:
